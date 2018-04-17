@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjetoAndroidTurma2</string>
+    <string name="action_settings">Settings</string>
+    <string name="limpar">Limpar</string>
+    <string name="dica">Dica</string>
+    <string name="op_es">Opções</string>
+    <string name="desocupado">Não procura ocupação</string>
+    <string name="desempregado">Desempregado</string>
+    <string name="rodrigo_rolim_veras">Rodrigo Rolim Veras</string>
+    <string name="ra_1694111">RA: 1694111</string>
+    <string name="curso_engenharia_de_software">curso: Engenharia de software</string>
+    <string name="voltar">Voltar</string>
+    <string name="empregado">Empregado</string>
+</resources>
