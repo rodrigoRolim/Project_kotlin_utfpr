@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProjetoAndroidTurma2.iml" filepath="$PROJECT_DIR$/ProjetoAndroidTurma2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project_kotlin_utfpr.iml" filepath="$PROJECT_DIR$/Project_kotlin_utfpr.iml" />
+      <module fileurl="file://C:\Users\Rodrigo\AndroidStudioProjects\ProjetoAndroidTurma2\Project_kotlin_utfpr\ProjetoAndroidTurma2.iml" filepath="C:\Users\Rodrigo\AndroidStudioProjects\ProjetoAndroidTurma2\Project_kotlin_utfpr\ProjetoAndroidTurma2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

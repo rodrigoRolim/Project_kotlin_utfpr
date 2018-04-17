@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="26dp"
     tools:context="com.example.rodrigo.projetoandroidturma2.DicaActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_dica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sdasdas"
+        android:textSize="26dp"/>
+
+    <Button
+        android:id="@+id/button_back_dica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="@string/voltar"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="117dp" />
+</LinearLayout>

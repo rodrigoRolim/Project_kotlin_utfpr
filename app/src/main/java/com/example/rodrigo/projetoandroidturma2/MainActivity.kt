@@ -1,13 +1,12 @@
 package com.example.rodrigo.projetoandroidturma2
 
+import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
+import android.widget.*
+
 
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,10 +17,35 @@ class MainActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        val button = findViewById<Button>(R.id.button_options)
-        button.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        val buttonOpt = findViewById<Button>(R.id.button_options)
+        val buttonClear = findViewById<Button>(R.id.button_clean)
+        val buttonDica = findViewById<Button>(R.id.button_dica)
+        val radioGroup = findViewById<RadioGroup>(R.id.radio_group)
+        val nameEdit = findViewById<EditText>(R.id.editText2)
+        val intentDica = Intent(this, DicaActivity::class.java)
+       // val radioButton = findViewById<RadioButton>(R.id.radio_group)
+
+        buttonOpt.setOnClickListener {
+
+            val intent = Intent(this, HelpActivity::class.java)
+            startActivity(intent)
+
+        }
+        buttonClear.setOnClickListener {
+
+            nameEdit.setText("")
+            val radioGroupClear = findViewById<RadioGroup>(R.id.radio_group)
+            radioGroupClear.clearCheck()
+        }
+        buttonDica.setOnClickListener {
+
+            val selected = radioGroup.checkedRadioButtonId
+            val name = nameEdit.text
+            if(selected == R.id.radio_occuped) intentDica.putExtra("selected","Parabens " + name)
+            if(selected == R.id.radio_notbusy) intentDica.putExtra("selected", "Nao se preocupe " + name)
+            if(selected == R.id.radio_unemployd) intentDica.putExtra("selected", "Vida boa " + name)
+            startActivity(intentDica)
+
         }
     }
 

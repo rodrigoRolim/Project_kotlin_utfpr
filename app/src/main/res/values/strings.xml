@@ -11,4 +11,5 @@
     <string name="curso_engenharia_de_software">curso: Engenharia de software</string>
     <string name="voltar">Voltar</string>
     <string name="empregado">Empregado</string>
+    <string name="name">Name</string>
 </resources>
